@@ -1,0 +1,24 @@
+mat-card-title {
+    padding-top: 60px;
+    padding-left: 30px;
+    font-size: 50px;
+    color: #fafafa;
+    background-color: black;
+}
+
+mat-card-subtitle {
+    padding-bottom: 60px;
+    padding-left: 30px;
+    font-size: 20px;
+    color: #fafafa;
+    background-color: black;
+}
+
+mat-card-content {
+    background-color: white;
+}
+
+mat-card {
+    padding: 0;
+    background-color: black;
+}

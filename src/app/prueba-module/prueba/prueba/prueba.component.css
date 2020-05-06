@@ -1,0 +1,20 @@
+.example-class {
+    color: #333;
+    font-size: 13pt;
+}
+
+.flex-container {
+    display: flex;
+    align-items: baseline;
+    padding: 0px 20px 0px 20px;
+}
+
+.flex-container>div {
+    width: 100px;
+    margin: 10px;
+    line-height: 20px;
+}
+
+table {
+    width: 100%;
+}
