@@ -23,7 +23,6 @@ export class PruebaComponent implements OnInit {
 
   constructor(public hitsService: HitsService) {}
   displayedColumns: string[] = ["dia", "actual", "min", "max"];
-  selectFormControl = new FormControl("", Validators.required);
   location: Location[] = [
     { city: "Santiago", country: "Chile" },
     { city: "Nueva York", country: "Estados Unidos" },
@@ -60,7 +59,6 @@ export class PruebaComponent implements OnInit {
 
   findlocation(location: any) {
     this.hitsService.findlocationSelect(location).subscribe((res: any) => {
-      console.log("respuesta");
       console.log(res.data.weather);
       if (res.data.weather != null || res.data.weather != undefined) {
         this.dataSource = res.data.weather;

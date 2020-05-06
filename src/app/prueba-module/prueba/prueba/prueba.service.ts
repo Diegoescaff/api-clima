@@ -10,7 +10,6 @@ export class HitsService {
   constructor(public http: HttpClient) {}
 
   findlocationSelect(location: any) {
-    console.log(location);
     const headerDict = {
       "Content-Type": "application/json",
       Accept: "application/json",
@@ -20,8 +19,6 @@ export class HitsService {
     const requestOptions = {
       headers: new Headers(headerDict),
     };
-    // location.city = location.city.replace(" ", "+");
-    // location.contry = location.contry.replace(" ", "+");
 
     const url =
       URL_SERVICIOS +
